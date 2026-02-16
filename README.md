@@ -140,8 +140,9 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
 ## Known Issues
 
 * Versions 1.8 - 2.1
-  * The SARC RC2016 chipset does not generate /SRAMR together with /BIOS signal. Presumably /BIOS signal (chipset pin 156) should be connected to the Flash ROM's /OE.
-    * Workaround: Cut the trace going to the Flash ROM pin 24. Solder a wire between pin 22 and pin 24.
+  * The board will not boot into the BIOS.
+    * Workaround: Cut the trace going to the Flash ROM pin 24. Solder a wire to connect the flash ROM /OE signal, pin 24 to the ISA /MEMR signal, ISA bus pin 89.
+    * The issue happens because following the reset, 386SX fetches instructions starting from address 0xFFFFF0 - the last 16 bytes of its 16 MiB address space. But the board uses /SMEMR signal for the Flash ROM /OE, and that signal is only generated when reading the first megabyte of memory. So the BIOS ROM does not get the /OE signal.
 * Versions 1.0 - 2.1
   * DRAM bank 0 and bank 1 swapped around. Bank 0 is the one closer to the edge of the board.
 
