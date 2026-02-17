@@ -54,8 +54,8 @@ IC Socket          | U7 - U9   | 14 pin DIP                                     
 Oscillator Socket  | X1, X2    | 4 pin DIP                                            | 2        | Mouser [535-1108800]()
 Battery            | BT1       | CR2032 battery                                       | 1        | Mouser [81-CR2032](https://www.mouser.com/ProductDetail/81-CR2032), [658-CR2032](https://www.mouser.com/ProductDetail/658-CR2032), or [614-CR2032-200](https://www.mouser.com/ProductDetail/614-CR2032-200)
 Battery Socket     | BT1       | CR2032 battery socket, through hole                  | 1        | Mouser [122-2420-GR](https://www.mouser.com/ProductDetail/122-2420-GR), or [122-2620-GR](https://www.mouser.com/ProductDetail/122-2620-GR)
-Connector          | J1 - J6   | ISA card edge connector, 98 pin                      | 6        | Mouser [587-395-098-520-350](https://www.mouser.com/ProductDetail/587-395-098-520-350)
-Connector          | J7 - J10  | SIMM 30 socket, 30 pin                               | 4        | eBay
+Connector          | J1 - J4   | SIMM 30 socket, 30 pin                               | 4        | eBay
+Connector          | J5 - J10  | ISA card edge connector, 98 pin                      | 6        | Mouser [587-395-098-520-350](https://www.mouser.com/ProductDetail/587-395-098-520-350)
 Connector          | J11       | PS/2 Keyboard/Mouse connector, Mini-DIN 6 pin        | 1        | Mouser [806-KMDGX-6S-BS](https://www.mouser.com/ProductDetail/806-KMDGX-6S-BS)
 Connector          | J12       | ATX power connector, 20 pin                          | 1        | Mouser [538-46015-2006](https://www.mouser.com/ProductDetail/538-46015-2006)
 Connector          | J13       | 2x8 pin header, 2.54 mm (0.1") pitch, through hole   | 1        | Mouser [737-PH2-16-UA]()
