@@ -6,8 +6,8 @@
 
   (title_block
     (title "386SX Motherboard Based on SARC RC2016 Chipset")
-    (date "2026-01-28")
-    (rev "2.1")
+    (date "2026-02-17")
+    (rev "2.2")
     (company "Copyright (C) 2024-2026 Sergey Kiselev")
     (comment 1 "https://github.com/Marco-Both/M396F-Replika")
     (comment 2 "Based on the M396F motherboard replica by Marco Both:")
@@ -1940,11 +1940,11 @@
           (number "101" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 77.47 59.69 180) (length 5.08)
-          (name "~{MRAS23}" (effects (font (size 1.27 1.27))))
+          (name "~{MRAS01}" (effects (font (size 1.27 1.27))))
           (number "102" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 77.47 62.23 180) (length 5.08)
-          (name "~{MRAS01}" (effects (font (size 1.27 1.27))))
+          (name "~{MRAS23}" (effects (font (size 1.27 1.27))))
           (number "103" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 77.47 64.77 180) (length 5.08)
@@ -1956,19 +1956,19 @@
           (number "105" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 62.23 77.47 270) (length 5.08)
-          (name "~{MCAS3}" (effects (font (size 1.27 1.27))))
+          (name "~{MCAS0}" (effects (font (size 1.27 1.27))))
           (number "106" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 59.69 77.47 270) (length 5.08)
-          (name "~{MCAS2}" (effects (font (size 1.27 1.27))))
+          (name "~{MCAS1}" (effects (font (size 1.27 1.27))))
           (number "107" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 57.15 77.47 270) (length 5.08)
-          (name "~{MCAS1}" (effects (font (size 1.27 1.27))))
+          (name "~{MCAS2}" (effects (font (size 1.27 1.27))))
           (number "108" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 54.61 77.47 270) (length 5.08)
-          (name "~{MCAS0}" (effects (font (size 1.27 1.27))))
+          (name "~{MCAS3}" (effects (font (size 1.27 1.27))))
           (number "109" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at -39.37 -77.47 90) (length 5.08)
@@ -2196,11 +2196,11 @@
           (number "16" (effects (font (size 1.27 1.27))))
         )
         (pin tri_state line (at -77.47 57.15 0) (length 5.08)
-          (name "MDP13" (effects (font (size 1.27 1.27))))
+          (name "DP_LO" (effects (font (size 1.27 1.27))))
           (number "160" (effects (font (size 1.27 1.27))))
         )
         (pin tri_state line (at -77.47 54.61 0) (length 5.08)
-          (name "MDP02" (effects (font (size 1.27 1.27))))
+          (name "DP_HI" (effects (font (size 1.27 1.27))))
           (number "161" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at -77.47 52.07 0) (length 5.08)
@@ -6018,14 +6018,14 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "MDP02" (shape tri_state) (at 25.4 58.42 180) (fields_autoplaced)
+  (global_label "DP_HI" (shape tri_state) (at 25.4 58.42 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 0893a5c5-5f1f-406a-be2f-7fdc4f421c7b)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 16.5764 58.3406 0)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 17.544 58.3406 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "~{MCAS1}" (shape output) (at 165.1 30.48 90) (fields_autoplaced)
+  (global_label "~{MCAS2}" (shape output) (at 165.1 30.48 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 08b226fa-dc4e-400e-aa38-ea61b34046d3)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 165.0206 21.8379 90)
@@ -6263,10 +6263,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "MDP13" (shape tri_state) (at 25.4 55.88 180) (fields_autoplaced)
+  (global_label "DP_LO" (shape tri_state) (at 25.4 55.88 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 1ddf3fa6-d5ab-4f2f-a6e8-c013617d1248)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 16.5764 55.8006 0)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 17.1207 55.8006 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -7082,7 +7082,7 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{MCAS3}" (shape output) (at 170.18 30.48 90) (fields_autoplaced)
+  (global_label "~{MCAS0}" (shape output) (at 170.18 30.48 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7e9793c3-2a83-4db4-af89-bf2f73af9140)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 170.1006 21.8379 90)
@@ -7446,14 +7446,14 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "~{MCAS2}" (shape output) (at 167.64 30.48 90) (fields_autoplaced)
+  (global_label "~{MCAS1}" (shape output) (at 167.64 30.48 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a11dcd90-c589-4898-9020-5d9efb95e03b)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 167.5606 21.8379 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{MRAS23}" (shape output) (at 190.5 53.34 0) (fields_autoplaced)
+  (global_label "~{MRAS01}" (shape output) (at 190.5 53.34 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a1f2d7e7-6995-403a-90eb-da30faa79f7b)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 200.3517 53.2606 0)
@@ -7754,7 +7754,7 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "~{MRAS01}" (shape output) (at 190.5 50.8 0) (fields_autoplaced)
+  (global_label "~{MRAS23}" (shape output) (at 190.5 50.8 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid bc8eccf8-f221-4d2c-a056-67ef9d907eb7)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 200.3517 50.7206 0)
@@ -8202,7 +8202,7 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{MCAS0}" (shape output) (at 162.56 30.48 90) (fields_autoplaced)
+  (global_label "~{MCAS3}" (shape output) (at 162.56 30.48 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f41c5e36-0b75-4328-bb42-7dbfd1887ae9)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 162.4806 21.8379 90)
@@ -9132,7 +9132,7 @@
     (uuid 896c5823-aa74-459b-aeca-0ad46e6df6a4)
     (property "Reference" "U3" (id 0) (at 186.69 41.6812 0))
     (property "Value" "RC2016A5" (id 1) (at 186.69 44.2212 0))
-    (property "Footprint" "My_Components:PQFP-208_28x28mm_P0.5mm_Handsoldering" (id 2) (at 107.95 120.65 0)
+    (property "Footprint" "Package_QFP:PQFP-208_28x28mm_P0.5mm" (id 2) (at 107.95 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 107.95 123.19 0)
@@ -10916,17 +10916,17 @@
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/73fe98f7-8b59-4f14-8dc9-a7e843d94d76"
       (reference "H7") (unit 1) (value "HOLE") (footprint "MountingHole:MountingHole_4mm_Pad_Via")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/520377df-283d-4c0c-a508-48b0439a5c71"
-      (reference "J1") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/069056e6-b6c0-4250-b4d3-e0552f9a5620"
+      (reference "J1") (unit 1) (value "BANK0") (footprint "My_Components:Conn_SIMM30")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/51eb62df-0056-4076-9c17-e8a150c186d7"
-      (reference "J2") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/0bfae472-811c-4887-9df9-78a9ee9a7876"
+      (reference "J2") (unit 1) (value "BANK0") (footprint "My_Components:Conn_SIMM30")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/3981a1bc-70ed-4714-964a-8a90eba30fe9"
-      (reference "J3") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/a2af9dba-42df-4812-8663-360a4f93771d"
+      (reference "J3") (unit 1) (value "BANK1") (footprint "My_Components:Conn_SIMM30")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/0eedbcbf-cde6-420c-a579-5d2c5bc29faf"
-      (reference "J4") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/937700a1-26dd-490c-ae66-0b7e3939b8e2"
+      (reference "J4") (unit 1) (value "BANK1") (footprint "My_Components:Conn_SIMM30")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/81311a36-68a4-4fc6-98ca-325f852393c8"
       (reference "J5") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
@@ -10934,17 +10934,17 @@
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/6cece84c-6111-4b3a-8590-9a17c91eadb9"
       (reference "J6") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/937700a1-26dd-490c-ae66-0b7e3939b8e2"
-      (reference "J7") (unit 1) (value "BANK0") (footprint "My_Components:Conn_SIMM30")
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/0eedbcbf-cde6-420c-a579-5d2c5bc29faf"
+      (reference "J7") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/a2af9dba-42df-4812-8663-360a4f93771d"
-      (reference "J8") (unit 1) (value "BANK0") (footprint "My_Components:Conn_SIMM30")
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/3981a1bc-70ed-4714-964a-8a90eba30fe9"
+      (reference "J8") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/0bfae472-811c-4887-9df9-78a9ee9a7876"
-      (reference "J9") (unit 1) (value "BANK1") (footprint "My_Components:Conn_SIMM30")
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/51eb62df-0056-4076-9c17-e8a150c186d7"
+      (reference "J9") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/069056e6-b6c0-4250-b4d3-e0552f9a5620"
-      (reference "J10") (unit 1) (value "BANK1") (footprint "My_Components:Conn_SIMM30")
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/520377df-283d-4c0c-a508-48b0439a5c71"
+      (reference "J10") (unit 1) (value "BUSAT_HOST") (footprint "My_Components:Conn_Edge_ISA16")
     )
     (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/479e2ec2-9712-4822-9c99-fe7c38372dd6"
       (reference "J11") (unit 1) (value "PS/2 Dual Port") (footprint "My_Components:Conn_Mini_DIN_6pin")
@@ -11045,22 +11045,22 @@
     (path "/11db97bd-7987-4a52-a099-91eb806250ef"
       (reference "R15") (unit 1) (value "22") (footprint "My_Components:Res_762")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/71aada45-7808-4276-b161-61d7db249a8f"
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/8ada6564-4809-42ed-8975-d5ba2059e9ee"
       (reference "R16") (unit 1) (value "56") (footprint "My_Components:Res_762")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/8ada6564-4809-42ed-8975-d5ba2059e9ee"
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/71aada45-7808-4276-b161-61d7db249a8f"
       (reference "R17") (unit 1) (value "56") (footprint "My_Components:Res_762")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/1dd83d56-3829-4b25-a49a-e029418875da"
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/ba9009d0-5b4b-47a7-9213-8d97184c39f9"
       (reference "R18") (unit 1) (value "100") (footprint "My_Components:Res_762")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/27df7921-2a79-4c62-aba6-aa28755bddb3"
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/45bd49e3-d781-4dd1-804c-f91d3d2edc7e"
       (reference "R19") (unit 1) (value "100") (footprint "My_Components:Res_762")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/45bd49e3-d781-4dd1-804c-f91d3d2edc7e"
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/27df7921-2a79-4c62-aba6-aa28755bddb3"
       (reference "R20") (unit 1) (value "100") (footprint "My_Components:Res_762")
     )
-    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/ba9009d0-5b4b-47a7-9213-8d97184c39f9"
+    (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/1dd83d56-3829-4b25-a49a-e029418875da"
       (reference "R21") (unit 1) (value "100") (footprint "My_Components:Res_762")
     )
     (path "/dfd81590-8c6f-413e-ae3f-c6cd719d418a"
@@ -11148,7 +11148,7 @@
       (reference "U2") (unit 1) (value "80387SX") (footprint "My_Components:IC_PLCC68_INTEL_TH")
     )
     (path "/896c5823-aa74-459b-aeca-0ad46e6df6a4"
-      (reference "U3") (unit 1) (value "RC2016A5") (footprint "My_Components:PQFP-208_28x28mm_P0.5mm_Handsoldering")
+      (reference "U3") (unit 1) (value "RC2016A5") (footprint "Package_QFP:PQFP-208_28x28mm_P0.5mm")
     )
     (path "/1c0f074e-275c-4c09-93e3-0959df27fb02/64fa0391-92f4-4c4f-8a2b-5ba1cb50c4aa"
       (reference "U4") (unit 1) (value "DS12885") (footprint "My_Components:IC_DIP24_600")
