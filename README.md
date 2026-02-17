@@ -11,7 +11,7 @@ In the future I plan to improve the design, as described in the Wishlist section
 
 ## Status
 
-* Board version 2.1 boots up to BIOS and Linux, after performing the fix described in the Known Issues section.
+* Board version 2.1 boots up to BIOS, DOS, and Linux, after performing the fix described in the Known Issues section.
 
 ## Hardware Documentation
 
