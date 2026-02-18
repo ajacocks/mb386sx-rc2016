@@ -98,6 +98,20 @@ Resistor Array     | RN2, RN3  | 4.7 kohm, 5 resistors, bussed, 6 pin SIL       
 Resistor Array     | RN4       | 4.7 kohm, 8 resistors, bussed, 9 pin SIL             | 1        | Mouser [652-4609X-1LF-4.7K](https://www.mouser.com/ProductDetail/652-4609X-1LF-4.7K) or [652-4609X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4609X-AP1-472LF)
 Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL              | 1        | Mouser [652-4605X-1LF-10K](https://www.mouser.com/ProductDetail/652-4605X-1LF-10K) or [652-4605X-AP1-103LF](https://www.mouser.com/ProductDetail/652-4605X-AP1-103LF)
 
+## Software
+
+### BIOS
+
+For the testing purposes I am using BIOSes from other commerical motherboards based on the same SARC RC2014 chipset. [The Retro Web](https://theretroweb.com/bios?itemsPerPage=24&chipsetIds[]=648) has a collection of the BIOSes for this chipset.
+
+#### BIOS Progamming and ROM ICs support.
+
+The is designed for the 128 KiB SST SST39SF010A Flash ROM. This ROM is mapped to the 0xE0000-0xFFFFF (or, with 8086 segments, E000:0000 to F000:FFFF). The upper 64 KiB - 0xF0000-0xFFFFF (F000:0000-F000:FFFF) are typically used for the BIOS ROM. The lower 64 KiB - 0xE0000-0xEFFFF can be used for BIOS extensions. Please take that into the consideration when programming the Flash ROM. Make sure to load the BIOS image to the top 64 KiB of the Flash ROM, starting at the address 0x10000. Other pin compatible 128 KiB Flash ROMs, such as AMD AM29F010A, SST SST29EE010, Atmel AT29C010A can be also used without any changes.
+
+It is also possible to use 256 KiB and 512 KiB Flash ROMs, for example SST39SF020 and SST39SF040. Note that the A17 address line is connected to VCC (logic high/"1") and the address line A18 is connected to the ground (logic low/"0"). Therefore when using these flash ROMs, please program the 64 KiB BIOS image starting at the addres 0x30000 of the Flash ROM.
+
+Finally, the board also should work with 64 KiB EPROMs and OTP ROMs, e.g., 27C512. In this case, install the EPROM to the right side of the socket, that is pin 1 of the EPROM should go to the pin 3 of the socket.
+
 ## Changes
 
 * Version 2.2
