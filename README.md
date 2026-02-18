@@ -1,28 +1,36 @@
-# mb386sx-rc2016
-SARC RC2016 Chipset Based 386SX/486SLC Motherboard
+# Alsea River 386SX Motherboard
+An 386SX/486SLC Motherboard based on SARC RC2016 Chipset
 
 ## Introduction
 
 The origin of this project is the [M396F motherboard replica by Marco Both](https://github.com/Marco-Both/M396F-Replika). Marco replicated the PCB layout of a certain revision of M396F motherboard. He didn't provide the schematic.
 
-I reverse engineered the schematic based on his PCB layout and made a PCB layout using that schematic similar to the Marco's replica.
+I reverse engineered the schematic based on his PCB layout and made a PCB layout using that schematic similar to the Marco's replica. This was the initial version of this project - [version 1.0](https://github.com/skiselev/mb386sx-rc2016/tree/v1.0).
 
-In the future I plan to improve the design, as described in the Wishlist section below
+The subsequent versions contain the following improvements:
+
+* Use Dallas DS12885 RTC/NVRAM (aka CMOS) with a CR2032 battery instead of Motorola MC146818 with a NiCad battery. This reduces the likliehood of motherboard damage due to a leaking battery. A more modern RTC IC also reduces the number of components
+* Use SST39SF010A Flash ROM instead of an EPROM or OTP ROM. The Flash ROM is in-circuit programmable, allowing BIOS and BIOS extension upgrades. It has a bigger 128 KiB capacity, all of which is mapped to the CPU memory. The SST39SF010A is a currently manufactured part
+* Use PS/2 compatible keyboard controller (VIA VT82C42N or similar). The motherboard implements a dual PS/2 port with both keyboard and mouse signals. A PS/2 keyboard/mouse spliter cable can be used to connect both a keyboard and a mouse. This functionality has not been tested yet
+* Use ATX case compatible mounting holes placement. Implement ATX power supply power on circuit. This allows using the motherboard with more modern ATX cases and power supplies
+* Use DIP-8 / half-can crystal oscillators for the CPU and FPU clocks. This removes the need for a difficult to get clock synthesizer IC used in the original motherboard, while still allowing changing the CPU and the FPU clock by switching the oscillators
+* Implement headers for the CPU. The CPU can be either installed on a [separate i386 socket board](https://github.com/skiselev/i386sx-socket), or soldered down on the motherboard
 
 ## Status
 
-* Board version 2.1 boots up to BIOS, DOS, and Linux, after performing the fix described in the Known Issues section.
+* Board version 2.1 boots up to BIOS, DOS, and Linux, after performing the fix described in the Known Issues section
+* Board version 2.2 has the fix for the BIOS /OE issue, but it has not been actually built and tested yet
 
 ## Hardware Documentation
 
 ### Schematic and PCB Layout
 
-* [Schematic - Version 2.1](KiCad/AT386SX-Schematic-2.1.pdf)
-* [PCB Layout - Version 2.1](KiCad/AT386SX-Board-2.1.pdf)
+* [Schematic - Version 2.2](KiCad/AT386SX-Schematic-2.2.pdf)
+* [PCB Layout - Version 2.2](KiCad/AT386SX-Board-2.2.pdf)
 
 ### Bill of Materials
 
-#### Version 2.1
+#### Version 2.2
 
 [Alsea River 386SX Motherboard project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=xxxxxxxxxx) - View and order most components except of the CPU, chipset, keyboard controller, SIMM-30 sockets, and the PCB.
 
@@ -65,12 +73,12 @@ Connector          | JP4 - JP6 | 3 pin header, 2.54 mm (0.1") pitch, through hol
 Connector          | JP1 - JP6 | Shunt, 2 pin, 2.54 mm (0.1") pitch                   | 4        | Mouser [737-MSA-G](), [806-SX1100-B](https://www.mouser.com/ProductDetail/806-SX1100-B)
 Switch             | SW1, SW2  | 6 mm tactile switch, vertical, through hole          | 2        | Optional. Mouser [653-B3F-1000](https://www.mouser.com/ProductDetail/653-B3F-1000)
 Capacitor          | C1 - C3   | 30 pF, 50V MLCC, 5.08 mm (0.2") pitch                | 3        | Mouser [594-K300J10C0GF5UH5]()
-Capacitor          | C4 - C8   | 47 pF, 50V MLCC, 5.08 mm (0.2") pitch                | 5        | Mouser [810-FG28C0G1H470JNT6](https://www.mouser.com/ProductDetail/810-FG28C0G1H470JNT6)
-Capacitor          | C9        | 100 pF, 50V MLCC, 5.08 mm (0.2") pitch               | 1        | Mouser [810-FG28C0G1H101JNT6]()
-Capacitor          | C10       | 220 pF, 50V MLCC, 5.08 mm (0.2") pitch               | 1        | Mouser [810-FG28C0G1H221JNT6]()
-Capacitor          | C11 - C22 | 100 nF, 25V MLCC, 5.08 mm (0.2") pitch               | 12       | Mouser [594-K104K15X7RF53H5](https://www.mouser.com/ProductDetail/594-K104K15X7RF53H5) or [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
-Capacitor          | C23, C24  | 1 uF, 10V MLCC, 5.08 mm (0.2") pitch                 | 2        | Mouser [810-FG28X5R1H105KRT0]()
-Capacitor          | C25 - C49 | 10 uF, 25V electrolytic, 5 mm diameter, 2.5 mm pitch | 25       | Mouser [667-EEU-FR1H100]()
+Capacitor          | C4 - C7   | 47 pF, 50V MLCC, 5.08 mm (0.2") pitch                | 4        | Mouser [810-FG28C0G1H470JNT6](https://www.mouser.com/ProductDetail/810-FG28C0G1H470JNT6)
+Capacitor          | C8        | 100 pF, 50V MLCC, 5.08 mm (0.2") pitch               | 1        | Mouser [810-FG28C0G1H101JNT6]()
+Capacitor          | C9        | 220 pF, 50V MLCC, 5.08 mm (0.2") pitch               | 1        | Mouser [810-FG28C0G1H221JNT6]()
+Capacitor          | C10 - C21 | 100 nF, 25V MLCC, 5.08 mm (0.2") pitch               | 12       | Mouser [594-K104K15X7RF53H5](https://www.mouser.com/ProductDetail/594-K104K15X7RF53H5) or [810-FG28X7R1H104KNT6](https://www.mouser.com/ProductDetail/810-FG28X7R1H104KNT6)
+Capacitor          | C22, C23  | 1 uF, 10V MLCC, 5.08 mm (0.2") pitch                 | 2        | Mouser [810-FG28X5R1H105KRT0]()
+Capacitor          | C24 - C48 | 10 uF, 25V electrolytic, 5 mm diameter, 2.5 mm pitch | 25       | Mouser [667-EEU-FR1H100]()
 Ferrite Choke      | L1 - L4   | axial                                                | 4        | Mouser [623-2743001112LF]()
 Resistor           | R1 - R12  | 10 ohm, 0.25 W, axial                                | 12       | Mouser [708-CF14JT10R0]()
 Resistor           | R13 - R15 | 22 ohm, 0.25 W, axial                                | 3        | Mouser [708-CF14JT22R0]()
@@ -97,6 +105,7 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
   * Renumber SIMM and ISA slots, so that the reference numbers increase from the top of the PCB to the bottom
   * Renumber electrolytic capacitors, so that the reference numbers increase from the top of the PCB to the bottom
   * Use 22 kohm resistor for R39
+  * Remove load capacitors on the ISA bus signals, that are not populated anyway
 
 * Version 2.1
   * Renumber the component references according to the values and locations on the PCB
@@ -132,6 +141,7 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
 
 * Version 1.4
   * Increase board depth by 0.1". Move mount holes to ATX compatible locations
+
 * Version 1.3
   * Wire keyboard controller in PS/2 mode. Use PS/2 Mini-Din connector in a PS/2 dualport configuration
 
@@ -151,6 +161,7 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
   * The board will not boot into the BIOS.
     * Workaround: Cut the trace going to the Flash ROM pin 24. Solder a wire to connect the flash ROM /OE signal, pin 24 to the ISA /MEMR signal, ISA bus pin 89.
     * The issue happens because following the reset, 386SX fetches instructions starting from address 0xFFFFF0 - the last 16 bytes of its 16 MiB address space. But the board uses /SMEMR signal for the Flash ROM /OE, and that signal is only generated when reading the first megabyte of memory. So the BIOS ROM does not get the /OE signal.
+
 * Versions 1.0 - 2.1
   * DRAM bank 0 and bank 1 swapped around. Bank 0 is the one closer to the edge of the board.
 
@@ -167,5 +178,3 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
 * 4 layer PCB
   * VCC and ground planes
 * Consider using SMD components
-* Various optimizations
-  * Remove load capacitors on the ISA bus signals (not populated anyway)
