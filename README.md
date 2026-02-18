@@ -34,7 +34,7 @@ The subsequent versions contain the following improvements:
 
 #### Version 2.2
 
-[Alsea River 386SX Motherboard project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=xxxxxxxxxx) - View and order most components except of the CPU, chipset, keyboard controller, SIMM-30 sockets, and the PCB.
+[Alsea River 386SX Motherboard project on Mouser.com](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=12a7f68ea8) - View and order most components except of the CPU, chipset, keyboard controller, SIMM-30 sockets, and the PCB.
 
 Component type     | Reference | Description                                          | Quantity | Possible sources and notes 
 ------------------ | --------- | ---------------------------------------------------- | -------- | --------------------------
