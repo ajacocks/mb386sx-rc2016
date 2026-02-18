@@ -81,7 +81,7 @@ Resistor           | R23 - R29 | 470 ohm, 0.25 W, axial                         
 Resistor           | R30, R31  | 1 kohm, 0.25 W, axial                                | 2        | Mouser [708-CF14JT1K00](), [603-MFR-25FBF52-1K](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-1K)
 Resistor           | R32       | 4.7 kohm, 0.25 W, axial                              | 1        | Mouser [708-CF14JT4K70]()
 Resistor           | R33 - R38 | 10 kohm, 0.25 W, axial                               | 6        | Mouser [708-CF14JT10K0](), [603-MFR-25FBF52-10K](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-10K)
-Resistor           | R39       | 20 kohm, 0.25 W, axial                               | 1        | Mouser [708-CF14JT20K0]()
+Resistor           | R39       | 22 kohm, 0.25 W, axial                               | 1        | Mouser [708-CF14JT22K0]()
 Resistor           | R40       | 1 Mohm, 0.25 W, axial                                | 1        | Mouser [708-CF14JT1M00](), [603-MFR-25FBF52-1M](https://www.mouser.com/ProductDetail/603-MFR-25FBF52-1M)
 Resistor Array     | RN1       | 330 ohm, 8 resistors, bussed, 9 pin SIL              | 1        | Mouser [652-4609X-1LF-330]() or [652-4609X-AP1-331LF]()
 Resistor Array     | RN2, RN3  | 4.7 kohm, 5 resistors, bussed, 6 pin SIL             | 2        | Mouser [652-4606X-1LF-4.7K](https://www.mouser.com/ProductDetail/652-4606X-1LF-4.7K) or [652-4606X-AP1-472LF](https://www.mouser.com/ProductDetail/652-4606X-AP1-472LF)
@@ -89,6 +89,14 @@ Resistor Array     | RN4       | 4.7 kohm, 8 resistors, bussed, 9 pin SIL       
 Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL              | 1        | Mouser [652-4605X-1LF-10K](https://www.mouser.com/ProductDetail/652-4605X-1LF-10K) or [652-4605X-AP1-103LF](https://www.mouser.com/ProductDetail/652-4605X-AP1-103LF)
 
 ## Changes
+
+* Version 2.2
+  * Fix the Flash ROM /OE issue: Connect Flash ROM /OE to ISA /MEMR
+  * Renumber DRAM banks - swap Bank 0 and Bank 1. Rename DRAM signals accordingly
+  * Add CPU pin 1 marking on the silkscreen
+  * Renumber SIMM and ISA slots, so that the reference numbers increase from the top of the PCB to the bottom
+  * Renumber electrolythic capacitors, so that the reference numbers increase from the top of the PCB to the bottom
+  * Use 22 kohm resistor for R39
 
 * Version 2.1
   * Renumber the component references according to the values and locations on the PCB
@@ -151,18 +159,13 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
 * On-board speaker
 * Add a polyfuse on the PS/2 power
 * Try using more common values for C1 - C2: 27 pF or 33 pF are more commonly available than 30 pF
-* Use a more common 22 kohm value for R39
 * 3.3V CPU support
   * The current plan is to test this using the [386SX Universal Socket Adapter](https://github.com/skiselev/i386sx-socket)
   * Separate VCC plane for the CPU
   * Linear voltage regulator
   * Solder jumpers to bypass the voltage regulator and connect the CPU to 5V
-* Flash ROM
-  * Check if BIOS_RD signal is generated for writes.
-  * Connect /WR signal to flash ROM (jumper between /WR and VCC?)
 * 4 layer PCB
   * VCC and ground planes
 * Consider using SMD components
 * Various optimizations
   * Remove load capacitors on the ISA bus signals (not populated anyway)
-  * Use ferrite bead instead of R25 (other motherboards do that?)
