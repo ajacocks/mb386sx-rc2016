@@ -95,7 +95,7 @@ Resistor Array     | RN5       | 10 kohm, 4 resistors, bussed, 5 pin SIL        
   * Renumber DRAM banks - swap Bank 0 and Bank 1. Rename DRAM signals accordingly
   * Add CPU pin 1 marking on the silkscreen
   * Renumber SIMM and ISA slots, so that the reference numbers increase from the top of the PCB to the bottom
-  * Renumber electrolythic capacitors, so that the reference numbers increase from the top of the PCB to the bottom
+  * Renumber electrolytic capacitors, so that the reference numbers increase from the top of the PCB to the bottom
   * Use 22 kohm resistor for R39
 
 * Version 2.1
