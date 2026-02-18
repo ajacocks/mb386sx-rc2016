@@ -16,6 +16,8 @@ The subsequent versions contain the following improvements:
 * Use DIP-8 / half-can crystal oscillators for the CPU and FPU clocks. This removes the need for a difficult to get clock synthesizer IC used in the original motherboard, while still allowing changing the CPU and the FPU clock by switching the oscillators
 * Implement headers for the CPU. The CPU can be either installed on a [separate i386 socket board](https://github.com/skiselev/i386sx-socket), or soldered down on the motherboard
 
+![Alsea River 386SX - Assembled Board](images/Alsea_River-386SX-Assembled_Board.jpg)
+
 ## Status
 
 * Board version 2.1 boots up to BIOS, DOS, and Linux, after performing the fix described in the Known Issues section
