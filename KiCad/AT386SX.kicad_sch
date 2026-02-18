@@ -10767,7 +10767,7 @@
       (reference "C20") (unit 1) (value "100nF") (footprint "My_Components:Cap_Cer_508")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/146f89a1-9b51-4fc1-975f-1e285a094610"
-      (reference "C21") (unit 1) (value "100uF") (footprint "My_Components:Cap_Cer_508")
+      (reference "C21") (unit 1) (value "100nF") (footprint "My_Components:Cap_Cer_508")
     )
     (path "/f1723a6e-95c3-483b-b62e-d6e5b628632d"
       (reference "C22") (unit 1) (value "100nF") (footprint "My_Components:Cap_Cer_508")
@@ -10784,73 +10784,73 @@
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063403301"
       (reference "C26") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb05ab"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-0000634025dc"
       (reference "C27") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/58fee7c8-7975-4989-b550-51ecadfbd81a"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb0fa8"
       (reference "C28") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-00006415af00"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063f0c61e"
       (reference "C29") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/d44ce32e-e673-45da-90ee-6b6c41271040"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063f0c422"
       (reference "C30") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/83e6d6e6-3a0e-4f35-9aac-5a1696ccc4a8"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063507b45"
       (reference "C31") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/cf5f981f-8d0d-4a2c-8ab1-c25cb5dace33"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/1d3ff808-717f-434e-a57b-74feb2ca562a"
       (reference "C32") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063a991c4"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/acee4479-6f6d-41b4-b693-5e83c3878033"
       (reference "C33") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/1d3ff808-717f-434e-a57b-74feb2ca562a"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063a991c4"
       (reference "C34") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/acee4479-6f6d-41b4-b693-5e83c3878033"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/d44ce32e-e673-45da-90ee-6b6c41271040"
       (reference "C35") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063f0c422"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/83e6d6e6-3a0e-4f35-9aac-5a1696ccc4a8"
       (reference "C36") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063507b45"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/cf5f981f-8d0d-4a2c-8ab1-c25cb5dace33"
       (reference "C37") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb0fa8"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb05ab"
       (reference "C38") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063f0c61e"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/58fee7c8-7975-4989-b550-51ecadfbd81a"
       (reference "C39") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-0000634025dc"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-00006415af00"
       (reference "C40") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/72c93df4-901b-461c-920a-5af57e8f3b34"
       (reference "C41") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb0816"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/a403b7ba-4f6e-4ddc-9b0d-0272dd53c8b1"
       (reference "C42") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/a403b7ba-4f6e-4ddc-9b0d-0272dd53c8b1"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb0816"
       (reference "C43") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/866f27b2-3b82-43ca-9630-39cc8b496339"
       (reference "C44") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb0b8c"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/3110a922-14a0-44ef-a54c-3b575cbe8b26"
       (reference "C45") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/3110a922-14a0-44ef-a54c-3b575cbe8b26"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063bb0b8c"
       (reference "C46") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/16473865-3bb2-4dc5-b29e-12be28744a4c"
       (reference "C47") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063507b31"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/43bba2de-b2e8-44ad-b2d4-e209d0f942ad"
       (reference "C48") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/43bba2de-b2e8-44ad-b2d4-e209d0f942ad"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/00000000-0000-0000-0000-000063507b31"
       (reference "C49") (unit 1) (value "10uF") (footprint "My_Components:Cap_Elec_Radial_5mm_2.5mm")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/4287aab0-4184-45db-a75d-09310ed89582"
@@ -11115,7 +11115,7 @@
       (reference "R38") (unit 1) (value "10k") (footprint "My_Components:Res_762")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/f3c6618e-53f3-4f1a-9db2-958047a238b2"
-      (reference "R39") (unit 1) (value "20k") (footprint "My_Components:Res_762")
+      (reference "R39") (unit 1) (value "22k") (footprint "My_Components:Res_762")
     )
     (path "/fc656fe6-7d01-4793-8d82-3b067e40abe2"
       (reference "R40") (unit 1) (value "1M") (footprint "My_Components:Res_762")
@@ -11123,10 +11123,10 @@
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/483c61d0-cbab-49b2-9bde-e0b4ad354ffa"
       (reference "RN1") (unit 1) (value "330") (footprint "My_Components:Conn_SIL9")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/47821b7e-104b-48e6-86f2-072c2a1b5313"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/f685576f-2d5f-436b-8674-c8934ee81303"
       (reference "RN2") (unit 1) (value "4.7k") (footprint "My_Components:Conn_SIL6")
     )
-    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/f685576f-2d5f-436b-8674-c8934ee81303"
+    (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/47821b7e-104b-48e6-86f2-072c2a1b5313"
       (reference "RN3") (unit 1) (value "4.7k") (footprint "My_Components:Conn_SIL6")
     )
     (path "/b540f997-cabb-4061-85a0-370b4e9dd03a/15c5cb70-9076-4d0d-8d62-4d5b5f0b4f83"
